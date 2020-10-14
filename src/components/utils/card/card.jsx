@@ -1,4 +1,5 @@
 import React from 'react';
+import TabItem from '../tabItem/tabItem';
 import { data } from './card_config';
 import '/public/portfolio.svg';
 
@@ -6,11 +7,17 @@ import '/public/portfolio.svg';
 const Card = (props) => {
     return ( 
      <div className="card" style={data.cardStyle}>
-         <img src={data.imageSrc} className="card-img-top" alt="" style={data.imageStyle}/>
-     <h5 className="card-title" style={data.cardTitleStyle}>{data.cardTitleText}</h5>
-         <div className="card-body">
-     <p className="card-text">{data.cardBodyText}</p>
+         <div className="row">
+                <div className="col">
+                <img src={props.imageSrc} className="card-img-top" alt="" style={data.imageStyle}/>
+                </div>
          </div>
+         <div className="row" style={{padding :"10px 2px 2px 2px"}}>
+             <div className="col">
+                <TabItem bodyText={props.titleText} imageSrc="rightarrow.png"></TabItem>
+             </div>
+         </div>
+         
      </div>
      );
 }

@@ -3,7 +3,9 @@ export const data = {
         width : "18rem",
         margin : "5px 5px 5px 5px",
         fontFamily : "comic sans ms",
-        alignContent : "center"
+        alignContent : "center",
+        border:'none'       
+       // boxShadow: "8px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19)"
    },
     imageStyle : {
            

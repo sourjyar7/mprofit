@@ -13,5 +13,9 @@ export const data = {
         textAlign : 'center',
         padding : '5px 5px 5px 5px',
         fontWeight: '200'
+    },
+    imageColStyle :{
+        padding :'50px 2px 5px 2px',
+        alignContent : 'center'
     }
 }

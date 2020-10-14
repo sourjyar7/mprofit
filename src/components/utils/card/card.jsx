@@ -2,6 +2,7 @@ import React from 'react';
 import TabItem from '../tabItem/tabItem';
 import { data } from './card_config';
 import '/public/portfolio.svg';
+import './card.css';
 
 
 const Card = (props) => {

@@ -3,7 +3,7 @@ import Card from '../card/card';
 import { data } from '../jumbotronHorizontal/jumbotronHorizontal_config';
 
 const HorizontalJumbotron = (props) => {
-    return (<div className="jumbotron">
+    return (<div className="jumbotron"  >
              <div className="container">
               
               <div className="row">
@@ -13,16 +13,16 @@ const HorizontalJumbotron = (props) => {
                   </div>
               </div>
              </div>
-             <div className="container" > 
+             <div className="container"  > 
 
-               <div className="row" style={{alignItems : 'center'}}>
-                  <div className="col-lg-4 col-md-6 col-sm-12" style={{padding :'50px 2px 5px 2px'}}>
+               <div className="row" >
+                  <div className="col-lg-4 col-md-6 col-sm-12" style={data.imageColStyle}>
                   <Card imageSrc="researching.svg" titleText="Add and track multiple assets" bodyText=""></Card>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12" style={{padding :'50px 2px 5px 2px'}}>
+                  <div className="col-lg-4 col-md-6 col-sm-12" style={data.imageColStyle}>
                   <Card imageSrc="fileformats.svg" titleText="Auto import data from json files" bodyText=""></Card>
                   </div>
-                  <div className="col-lg-4 col-md-12 col-sm-12" style={{padding :'50px 2px 5px 2px'}}>
+                  <div className="col-lg-4 col-md-12 col-sm-12" style={data.imageColStyle}>
                   <Card imageSrc="returns.svg" titleText="Get realtime portfolio valuations" bodyText=""></Card>                   
                   </div>
                </div>   

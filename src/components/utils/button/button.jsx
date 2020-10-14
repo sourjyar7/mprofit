@@ -3,7 +3,7 @@ import { data } from './button_config';
 
 const Button = (props) => {
     return ( 
-    <button type="button" className={`btn ${data.styleClass}`}>{data.buttonText}</button>
+    <button type="button" className={`btn ${data.styleClass}`}>{props.buttonText}</button>
      );
 }
  

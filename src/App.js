@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Button from './components/utils/button/button';
-import Card from './components/utils/card/card';
+
+import Jumbotron from './components/utils/jumbotron/jumbotron';
 
 function App() {
   return (
     <div className="App">
       <h1>Hi</h1>
       
-      
+      <Jumbotron imageSrc="investing.svg" 
+        headingText="Investing Made Simple.." 
+        bodyText="Manage your investments the smart way with MProfit">
+      </Jumbotron>
 
     </div>
   );

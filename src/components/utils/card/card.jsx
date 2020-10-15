@@ -13,9 +13,9 @@ const Card = (props) => {
                 <img src={props.imageSrc} className="card-img-top" alt="" style={data.imageStyle}/>
                 </div>
          </div>
-         <div className="row" style={{padding :"10px 2px 2px 2px"}}>
+         <div className="row" style={data.tabItemStyle}>
              <div className="col">
-                <TabItem bodyText={props.titleText} imageSrc="rightarrow.png"></TabItem>
+                <TabItem bodyText={props.titleText} imageSrc={props.image2Src}></TabItem>
              </div>
          </div>
          

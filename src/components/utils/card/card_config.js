@@ -22,6 +22,7 @@ export const data = {
         padding : "10px 0px 0px 12px",
    },
     
-    cardBodyText : "Some quick example text to build on the card title and make up the bulk of the card's content."
+    cardBodyText : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    tabItemStyle : {padding :"10px 2px 2px 2px"}
 
 }

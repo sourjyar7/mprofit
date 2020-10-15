@@ -12,8 +12,10 @@ function App() {
      
       
     <HorizontalJumbotron 
-     headingText="A Complete Portfolio Management Solution"
-     bodyText="Powered by an intuitive interface on Web, MProfit lets you maintain multi-asset investment portfolios and automates import of data"
+     isSimple={true}
+     headingText="Try MProfit for free !"
+    
+     buttonText="Sign Up Now -->"
     >
     </HorizontalJumbotron>
      

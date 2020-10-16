@@ -2,6 +2,7 @@ import React , { useContext } from 'react';
 import TabItem from '../tabItem/tabItem';
 import { CardStyleContext } from '../../../contexts/cardStyleContext/cardStyleContext';
 import './card.css';
+import TabItemStyleContextProvider from '../../../contexts/tabItemStyleContext/tabItemStyleContext';
 
 
 const Card = (props) => {
@@ -22,9 +23,11 @@ const Card = (props) => {
          <div className="row" style={tabItemStyle}>
              
              <div className="col">
-                <TabItem bodyText={props.titleText} imageSrc={props.iconSrc}></TabItem>
+                <TabItemStyleContextProvider>
+                    <TabItem bodyText={props.titleText} imageSrc={props.iconSrc}></TabItem>
+                </TabItemStyleContextProvider>
              </div>
-             
+
          </div>
          
      </div>

@@ -9,7 +9,7 @@ import { data } from '../jumbotronHorizontal/jumbotronHorizontal_config';
  - fix the alignment issue in card title text
    
  */
-const modJumbotron=(headingText,bodyText,card1,card2,card3)=>{
+const modJumbotron=(headingText,bodyText,card1,card2,card3,image2Src)=>{
   return (<div className="jumbotron"  >
   <div className="container">
    
@@ -23,14 +23,14 @@ const modJumbotron=(headingText,bodyText,card1,card2,card3)=>{
   <div className="container"  > 
 
     <div className="row" >
-       <div className="col-lg-4 col-md-6 col-sm-12" style={data.imageColStyle}>
-       <Card imageSrc={card1.imageSrc} titleText={card1.titleText} bodyText=""></Card>
+       <div className="col-lg-4 col-md-6 col-sm-12 text-center" style={data.imageColStyle}>
+       <Card imageSrc={card1.imageSrc} titleText={card1.titleText} bodyText="" image2Src={image2Src}></Card>
        </div>
-       <div className="col-lg-4 col-md-6 col-sm-12" style={data.imageColStyle}>
-       <Card imageSrc={card2.imageSrc} titleText={card2.titleText} bodyText=""></Card>
+       <div className="col-lg-4 col-md-6 col-sm-12 text-center" style={data.imageColStyle}>
+       <Card imageSrc={card2.imageSrc} titleText={card2.titleText} bodyText="" image2Src={image2Src}></Card>
        </div>
-       <div className="col-lg-4 col-md-12 col-sm-12" style={data.imageColStyle}>
-       <Card imageSrc={card3.imageSrc} titleText={card3.titleText} bodyText=""></Card>                   
+       <div className="col-lg-4 col-md-12 col-sm-12 text-center" style={data.imageColStyle}>
+       <Card imageSrc={card3.imageSrc} titleText={card3.titleText} bodyText="" image2Src={image2Src}></Card>                   
        </div>
     </div>   
   
@@ -43,7 +43,7 @@ const simpleJumbotron=(headingText,bodyText,buttonText)=>{
     <div style={data.simpleJumboStyle}>
         <div className="container">
             <div className="row"  >
-                <div className="col text-center" >
+                <div className="col " >
                 <div className="display-5" style={data.simpleJumboHeadingStyle}>{headingText}</div>
                 <p className="lead" style={data.simpleJumboParaStyle}>{bodyText}</p>
                 <Button buttonText={buttonText}></Button>
@@ -54,13 +54,13 @@ const simpleJumbotron=(headingText,bodyText,buttonText)=>{
   );
 }
 
-const HorizontalJumbotron = ({isSimple,headingText,bodyText,buttonText,card1,card2,card3}) => {
+const HorizontalJumbotron = ({isSimple,headingText,bodyText,buttonText,card1,card2,card3,image2Src}) => {
     
     if(isSimple){
       return simpleJumbotron(headingText,bodyText,buttonText);
     }
     else{
-      return modJumbotron(headingText,bodyText,card1,card2,card3);
+      return modJumbotron(headingText,bodyText,card1,card2,card3,image2Src);
     }
 }
  

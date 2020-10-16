@@ -5,19 +5,17 @@ import Jumbotron from './components/utils/jumbotron/jumbotron';
 import HorizontalJumbotron from './components/utils/jumbotronHorizontal/jumbotronHorizontal';
 import TabItem from './components/utils/tabItem/tabItem';
 import Card from './components/utils/card/card';
+import Footer from './components/utils/footer/footer';
 
 function App() {
+  const card1={ imageSrc: "researching.svg",titleText:"But now is the time to invest"};
+  const card2={ imageSrc: "researching.svg",titleText:"But now"};
+  const card3={ imageSrc: "researching.svg",titleText:"But now"};
   return (
     <div className="App">
      
       
-    <HorizontalJumbotron 
-     isSimple={true}
-     headingText="Try MProfit for free !"
-    
-     buttonText="Sign Up Now -->"
-    >
-    </HorizontalJumbotron>
+    <Footer></Footer>
      
       
 

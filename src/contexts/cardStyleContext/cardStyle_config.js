@@ -13,16 +13,8 @@ export const data = {
         height : "200px",
         padding : "2px 2px 2px 15px",
    }, 
-    
-    imageSrc : "portfolio.svg",
-    
-    cardTitleText : "Card Title",
-   
-    cardTitleStyle : {
-        padding : "10px 0px 0px 12px",
+   cardTitleStyle : {
+    padding : "10px 0px 0px 12px",
    },
-    
-    cardBodyText : "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    tabItemStyle : {padding :"10px 2px 2px 2px"}
-
-}
+   tabItemStyle : {padding :"10px 2px 2px 2px"}
+} 

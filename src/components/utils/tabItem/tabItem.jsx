@@ -5,13 +5,13 @@ const TabItem = (props) => {
     return ( 
         <div id="container" style={data.containerStyle}>
             
-            <div  id="image" style={data.imageStyle}> 
+            <div id="image" style={data.imageStyle}> 
                 <img src={props.imageSrc} alt="" width="30px"/>
             </div>
             
             
                    
-            <div  id="texts" style={data.textStyle}> 
+            <div id="texts" style={data.textStyle}> 
               {props.bodyText}
             </div>
             

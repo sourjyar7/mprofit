@@ -11,8 +11,9 @@ export const data = {
     },
     textStyle : {
         display:"inline", 
-        
         //whiteSpace:"nowrap", 
+        //overflow: "hidden",
+        //textOverflow: "ellipsis",
         fontFamily: "comic sans ms"
     }
 

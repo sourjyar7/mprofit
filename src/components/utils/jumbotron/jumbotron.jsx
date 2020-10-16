@@ -1,19 +1,21 @@
-import React from 'react';
-//import '/public/investing.svg';
+import React , { useContext } from 'react';
 import Button from '../button/button';
-import { data } from './jumbotron_config';
+import { JumbotronStyleContext } from '../../../contexts/jumbotronStyleContext/jumbotronStyleContext';
 
 
 const Jumbotron = (props) => {
+
+  const { headingStyle, imageStyle } = useContext(JumbotronStyleContext);
+
     return (
         <div className="jumbotron">
             <div className="container">
               <div className="row">
                 <div className="col" >
-                <img src={props.imageSrc} alt="" style={data.imageStyle}></img>
+                <img src={props.imageSrc} alt="" style={imageStyle}></img>
                 </div>
                 <div className="col">
-                <div className="display-5" style={data.headingStyle}>{props.headingText}</div>
+                <div className="display-5" style={headingStyle}>{props.headingText}</div>
                 <p className="lead">{props.bodyText}</p>
                 <Button buttonText="Get Started"></Button>    
               </div>
